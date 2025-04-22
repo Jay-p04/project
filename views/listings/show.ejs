@@ -95,21 +95,4 @@
         </div>
       
     </div>
-    <script>  
-     const mapDiv = document.getElementById("map");
-        const lat = parseFloat(mapDiv.dataset.lat);
-        const lon = parseFloat(mapDiv.dataset.lon);
-      
-        // Set view: [latitude, longitude], zoom level
-        var map = L.map('map').setView([lat, lon], 13);
-      
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-      
-        // Add a marker (optional)
-        L.marker([lat, lon]).addTo(map)
-          .bindPopup('Hello from London!')
-          .openPopup();
-      </script>
+   
